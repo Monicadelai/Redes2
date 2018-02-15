@@ -1,0 +1,59 @@
+.TH "IRC_Server_Parser" 3 "Lunes, 8 de Mayo de 2017" "Version Versión&nbsp;1.1" "Redes de Comunicaciones 2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IRC_Server_Parser \- IRC_Server_Parser 
+Parsea y ejecuta los comandos IRC recibidos
+.PP
+.SS "Synopsis"
+.PP
+.PP
+.nf
+#include "includes/G\-2313\-07\-P1\-server\&.h"
+
+void IRC_Server_Parser(char* command, int desc, char** nick, char** prefix_user)
+.fi
+.PP
+.PP
+.SS "Descripción"
+.PP
+Recibe una cadena con el comando que se quiere ejecutar, esta función se encarga de parsear este comando y comprobar que esta correctamente formado\&. Si el comando pertenece a una caracteristica no implementada en nuestro servidor se enviará un mensaje al descriptor de usuario recibido por parametro indicando que dicho comando no esta implementado y es desconocido\&.
+.PP
+En caso de ser un comando conocido este se parseara, y según la información de este comando y el estado del usario se procedera a ejecutar el comando y enviar al usuario un mensaje, indicando que se ha realizado correctamente o incorrectamente\&.
+.PP
+En algún caso el mensaje sera enviado a todos los usuarios del canal, como puede ser el caso de JOIN KICK PART para informar de lo ocurrido a todos\&.
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIcommand\fP puntero a char con el comando recibido y que se va a parsear y ejecutar 
+.br
+\fIdesc\fP entero descriptor del usuario 
+.br
+\fInick\fP doble puntero char al nick del ususario 
+.br
+\fIprefix_user\fP doble puntero char al prefix del usuario
+.RE
+.PP
+\fBAtención:\fP
+.RS 4
+Esta función realiza reservas en nick y prefix_user\&. Libera la memoria solo si se hace QUIT, si el cliente se desconecta es el usuario quien tiene que liberar la memoria\&.
+.RE
+.PP
+.PP
+.PP
+.SS "Información"
+.PP
+\fBAutores:\fP
+.RS 4
+Alfonso Bonilla Trueba (alfonso.bonilla@estudiante.uam.es) 
+.PP
+Mónica de la Iglesia Martínez (monica.delaiglesia@estudiante.uam.es) 
+.RE
+.PP
+\fBCopyright:\fP
+.RS 4
+Pareja 7 - Grupo 2313
+.RE
+.PP
+.PP
+ 

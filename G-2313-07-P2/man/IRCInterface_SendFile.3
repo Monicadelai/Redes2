@@ -1,0 +1,59 @@
+.TH "IRCInterface_SendFile" 3 "Lunes, 8 de Mayo de 2017" "Version Versión&nbsp;1.0" "Redes de Comunicaciones 2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IRCInterface_SendFile \- IRCInterface_SendFile 
+Llamada por el botón 'Enviar Archivo'\&.
+.PP
+.SS "Synopsis"
+.PP
+.PP
+.nf
+#include <redes2/ircxchat\&.h>
+
+   void IRCInterface_SendFile (char * filename, char *nick, char *data, long unsigned int length)
+.fi
+.PP
+.PP
+.SS "Descripción"
+.PP
+Llamada por el botón 'Enviar Archivo'\&. Previamente debe seleccionarse un nick del canal para darle voz a dicho usuario\&. Esta función como todos los demás callbacks bloquea el interface y por tanto es el programador el que debe determinar si crea un nuevo hilo para enviar el archivo o no lo hace\&.
+.PP
+En cualquier caso sólo se puede realizar si el servidor acepta la orden\&. Las strings recibidas no deben ser manipuladas por el programador, sólo leídas\&.
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIfilename\fP nombre del fichero a enviar\&. 
+.br
+\fInick\fP nick del usuario que enviará el fichero\&. 
+.br
+\fIdata\fP datos a ser enviados\&. 
+.br
+\fIlength\fP longitud de los datos a ser enviados\&.
+.RE
+.PP
+\fBValores devueltos:\fP
+.RS 4
+\fITRUE\fP si se ha establecido la comunicación (debe devolverlo)\&. 
+.br
+\fIFALSE\fP en caso contrario (debe devolverlo)\&.
+.RE
+.PP
+.PP
+.PP
+.SS "Información"
+.PP
+\fBAutores:\fP
+.RS 4
+Alfonso Bonilla Trueba (alfonso.bonilla@estudiante.uam.es) 
+.PP
+Mónica de la Iglesia Martínez (monica.delaiglesia@estudiante.uam.es) 
+.RE
+.PP
+\fBCopyright:\fP
+.RS 4
+Pareja 7 - Grupo 2313
+.RE
+.PP
+.PP
+ 

@@ -1,0 +1,44 @@
+.TH "IRC_Accept_Connection" 3 "Lunes, 8 de Mayo de 2017" "Version Versión&nbsp;1.1" "Redes de Comunicaciones 2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IRC_Accept_Connection \- IRC_Accept_Connection 
+Acepta conexiones y crea un hilo cuando llega un cliente nuevo\&.
+.PP
+.SS "Synopsis"
+.PP
+.PP
+.nf
+#include "includes/G\-2313\-07\-P1\-server\&.h"
+
+void IRC_Accept_Connection(int sockval)
+.fi
+.PP
+.PP
+.SS "Descripción"
+.PP
+Esta función esta permanentemente a la espera de aceptar conexiones, cunado recibe una nueva conexion crea un hilo para el cliente que acaba de llegar y manda a este hilo a la funcion launch_service\&.
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIsockval\fP Valor del descriptor del servidor obtenido al crear el socket\&.
+.RE
+.PP
+.PP
+.PP
+.SS "Información"
+.PP
+\fBAutores:\fP
+.RS 4
+Alfonso Bonilla Trueba (alfonso.bonilla@estudiante.uam.es) 
+.PP
+Mónica de la Iglesia Martínez (monica.delaiglesia@estudiante.uam.es) 
+.RE
+.PP
+\fBCopyright:\fP
+.RS 4
+Pareja 7 - Grupo 2313
+.RE
+.PP
+.PP
+ 

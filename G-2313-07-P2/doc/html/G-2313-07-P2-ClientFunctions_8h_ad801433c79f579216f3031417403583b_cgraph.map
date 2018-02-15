@@ -1,0 +1,4 @@
+<map id="IRC_Client_Recieve" name="IRC_Client_Recieve">
+<area shape="rect" id="node2" href="$G-2313-07-P2-ClientParser_8h.html#ab5e4420e039ab253155647bb3bc06805" title="Parseador de los comandos recibidos del servidor para mostrar la información en el Cliente..." alt="" coords="196,5,328,32"/>
+<area shape="rect" id="node3" href="$G-2313-07-P2-ClientFunctions_8h.html#a93f5a0e561fa9f97a1a59568260768d5" title="Accepta el recibimiento de información. " alt="" coords="376,5,499,32"/>
+</map>

@@ -1,0 +1,51 @@
+.TH "isClosed" 3 "Lunes, 8 de Mayo de 2017" "Version Versión&nbsp;1.1" "Redes de Comunicaciones 2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+isClosed \- isClosed 
+Comprueba si un cliente se ha ido del servidor sin hacer quit
+.PP
+.SS "Synopsis"
+.PP
+.PP
+.nf
+#include "includes/G\-2313\-07\-P1\-server\&.h"
+
+long isClosed(int desc)
+.fi
+.PP
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIdesc\fP Descriptor sobre el que se quiere comprobar si la conxion ya no esta abierta\&.
+.RE
+.PP
+\fBValores devueltos:\fP
+.RS 4
+\fITRUE\fP en caso de que el usuario se haya marchado sin hacer QUIT 
+.br
+\fIFALSE\fP en caso de que el usuario siga en el servidor
+.RE
+.PP
+.SS "Descripción"
+.PP
+Esta funcion se encarga de comprobar si el socket sigue abierto, es decir, si el usuario se ha marchado pero no ha cerrado la conexion\&.
+.PP
+.PP
+.PP
+.SS "Información"
+.PP
+\fBAutores:\fP
+.RS 4
+Alfonso Bonilla Trueba (alfonso.bonilla@estudiante.uam.es) 
+.PP
+Mónica de la Iglesia Martínez (monica.delaiglesia@estudiante.uam.es) 
+.RE
+.PP
+\fBCopyright:\fP
+.RS 4
+Pareja 7 - Grupo 2313
+.RE
+.PP
+.PP
+ 

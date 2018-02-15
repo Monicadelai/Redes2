@@ -1,0 +1,56 @@
+.TH "IRC_Client_Parser" 3 "Lunes, 8 de Mayo de 2017" "Version Versión&nbsp;1.0" "Redes de Comunicaciones 2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IRC_Client_Parser \- IRC_Client_Parser 
+Parsea y ejecuta los comandos IRC escritos por el cliente\&.
+.PP
+.SS "Synopsis"
+.PP
+.PP
+.nf
+#include "includes/G\-2313\-07\-P2\-ClientParser\&.h"
+
+char* IRC_Client_Parser(char* command, long option)
+.fi
+.PP
+.PP
+.SS "Descripción"
+.PP
+Recibe una cadena con el comando que se quiere ejecutar, esta función se encarga de parsear este para enviar el mensaje del usuario ya bien formado al servidor, de manera que este sea capaz de entender el contenido y lo que el usuario quiere realizar\&.
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIcommand\fP puntero a char con el comando recibido y que se va a parsear y ejecutar 
+.br
+\fIoption\fP valor de la opción
+.RE
+.PP
+\fBValores devueltos:\fP
+.RS 4
+\fIchar*\fP puntero a la cadena resultante con el mensaje listo para enviar al servidor
+.RE
+.PP
+\fBAtención:\fP
+.RS 4
+Esta función reserva memoria en el puntero que devuelve, en caso de que este puntero sea distinto de NULL su liberación es responsabilidad del usuario\&.
+.RE
+.PP
+.PP
+.PP
+.SS "Información"
+.PP
+\fBAutores:\fP
+.RS 4
+Alfonso Bonilla Trueba (alfonso.bonilla@estudiante.uam.es) 
+.PP
+Mónica de la Iglesia Martínez (monica.delaiglesia@estudiante.uam.es) 
+.RE
+.PP
+\fBCopyright:\fP
+.RS 4
+Pareja 7 - Grupo 2313
+.RE
+.PP
+.PP
+ 

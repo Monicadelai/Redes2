@@ -1,0 +1,53 @@
+.TH "enviar_datos_SSL" 3 "Lunes, 8 de Mayo de 2017" "Version Versión&nbsp;1.2" "Redes de Comunicaciones 2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+enviar_datos_SSL \- enviar_datos_SSL 
+Envia cualquier tipo de datos por un canal seguro
+.PP
+.SS "Synopsis"
+.PP
+.PP
+.nf
+#include "includes/G\-2313\-07\-P3\-ConnectionSSL\&.h"
+
+long enviar_datos_SSL(SSL *ssl, const void* data)
+.fi
+.PP
+.PP
+.SS "Descripción"
+.PP
+Esta función es equivalente a la función de envío de mensajes realizada en la práctica 1, pero esta es utilizada para enviar datos a través del canal seguro\&. Esta función es genérica y puede ser utilizada independientemente de los datos que se vayan a enviar\&.
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIssl\fP Conexión SSL sobre la que se van a enviar datos\&. 
+.br
+\fIdata\fP Puntero const a la variable donde se encuentran los datos a enviar, lo que quiere decir que los datos no se van a modificar]
+.RE
+.PP
+\fBValores devueltos:\fP
+.RS 4
+\fITRUE\fP Si los datos se han enviado correctamente\&. 
+.br
+\fIFALSE\fP En caso de que ocurra algún fallo en el envío de datos\&.
+.RE
+.PP
+.PP
+.PP
+.SS "Información"
+.PP
+\fBAutores:\fP
+.RS 4
+Alfonso Bonilla Trueba (alfonso.bonilla@estudiante.uam.es) 
+.PP
+Mónica de la Iglesia Martínez (monica.delaiglesia@estudiante.uam.es) 
+.RE
+.PP
+\fBCopyright:\fP
+.RS 4
+Pareja 7 - Grupo 2313
+.RE
+.PP
+.PP
+ 

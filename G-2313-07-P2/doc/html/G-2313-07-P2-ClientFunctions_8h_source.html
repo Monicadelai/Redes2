@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Redes de Comunicaciones 2: Fichero Fuente G-2313-07-P2/includes/G-2313-07-P2-ClientFunctions.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="uam-noticia.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Redes de Comunicaciones 2
+   &#160;<span id="projectnumber">Versión&nbsp;1.0</span>
+   </div>
+   <div id="projectbrief">Documentación&nbsp;sobre&nbsp;las&nbsp;funciones&nbsp;de&nbsp;inicialización&nbsp;y&nbsp;ejecución&nbsp;del&nbsp;Cliente&nbsp;IRC</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('G-2313-07-P2-ClientFunctions_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">G-2313-07-P2-ClientFunctions.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="G-2313-07-P2-ClientFunctions_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef CLIENTFUNCTIONS_H</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define CLIENTFUNCTIONS_H</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;redes2/ircxchat.h&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;sys/types.h&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;sys/socket.h&gt;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;netinet/in.h&gt;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;arpa/inet.h&gt;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;syslog.h&gt;</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;netdb.h&gt;</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;pthread.h&gt;</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;net/if.h&gt;</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;sys/ioctl.h&gt;</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;sys/select.h&gt;</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;sys/time.h&gt;</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;sys/types.h&gt;</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;ifaddrs.h&gt;</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="G-2313-07-P2-ClientParser_8h.html">G-2313-07-P2-ClientParser.h</a>&quot;</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="G-2313-07-P2-ClientFunctions_8h.html#afd2b0a25519b57fc6ee33b3e9ac500cd">   36</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structconexion.html">conexion</a> <a class="code" href="structconexion.html">conexion</a>;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="G-2313-07-P2-ClientFunctions_8h.html#a6b1e111eeb327ab917852dfcd8ba3f72">   37</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structthread__info.html">thread_info</a> <a class="code" href="structthread__info.html">thread_info</a>;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="G-2313-07-P2-ClientFunctions_8h.html#a976ca141f8ee9cac1cf2430da2359b5a">   38</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structthread__fich.html">thread_fich</a> <a class="code" href="structthread__fich.html">thread_fich</a>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structconexion.html">   44</a></span>&#160; <span class="keyword">struct </span><a class="code" href="structconexion.html">conexion</a>{</div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structconexion.html#a152beed50a7282ad63198a5ecf6d5c78">   45</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structconexion.html#a152beed50a7282ad63198a5ecf6d5c78">nick</a>; </div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structconexion.html#a1f101780e5a4a2ce18240e9fae831174">   46</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structconexion.html#a1f101780e5a4a2ce18240e9fae831174">user</a>; </div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structconexion.html#ae7ea11bfda1a85791e291e1a2071f2f6">   47</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structconexion.html#ae7ea11bfda1a85791e291e1a2071f2f6">realname</a>; </div><div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structconexion.html#ae901c274bc77ace61d474d067c603612">   48</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structconexion.html#ae901c274bc77ace61d474d067c603612">password</a>; </div><div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="structconexion.html#a132b049b9c92a4bbb6dbb3c2a303c047">   49</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structconexion.html#a132b049b9c92a4bbb6dbb3c2a303c047">server</a>;   </div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structconexion.html#a099a101a872153a5279cce96e567097e">   50</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structconexion.html#a099a101a872153a5279cce96e567097e">port</a>;   </div><div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structconexion.html#a738b6033c5caff3f179208de41f8044f">   51</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structconexion.html#a738b6033c5caff3f179208de41f8044f">desc</a>;   </div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="structthread__info.html">   57</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structthread__info.html">thread_info</a> {</div><div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structthread__info.html#ac51944f9d3685a4cf1b6fd846f4b89d6">   58</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structthread__info.html#ac51944f9d3685a4cf1b6fd846f4b89d6">sd</a>;                     </div><div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structthread__info.html#aecd2043a136d448cb6455ee6e114cf75">   59</a></span>&#160;    <span class="keyword">struct </span>sockaddr_in address; </div><div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structthread__info.html#a0143db75df8efac60d9cc21a133dcbff">   60</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structthread__info.html#a0143db75df8efac60d9cc21a133dcbff">addrlen</a>;                </div><div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="structthread__info.html#a504eee76cfedb354d17045efee177c5f">   61</a></span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="structthread__info.html#a504eee76cfedb354d17045efee177c5f">data</a>;                 </div><div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="structthread__info.html#a264b1e24a81f54cdcb20b4de69d92fc4">   62</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="structthread__info.html#a264b1e24a81f54cdcb20b4de69d92fc4">datalen</a>;               </div><div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structthread__info.html#a0511b614aa26392adcc64f8cb2c397e1">   63</a></span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="structthread__info.html#a0511b614aa26392adcc64f8cb2c397e1">nick</a>;                                 </div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="structthread__fich.html">   69</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structthread__fich.html">thread_fich</a> {</div><div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="structthread__fich.html#a3f5e3365234edf2ffd06b4a7fbe37db3">   70</a></span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="structthread__fich.html#a3f5e3365234edf2ffd06b4a7fbe37db3">filename</a>; </div><div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="structthread__fich.html#ad208ac2395638123c1e980317a84e41b">   71</a></span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="structthread__fich.html#ad208ac2395638123c1e980317a84e41b">data</a>; </div><div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="structthread__fich.html#aafa4a122b40f0af01b1fee9f1d41948e">   72</a></span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> <a class="code" href="structthread__fich.html#aafa4a122b40f0af01b1fee9f1d41948e">datalen</a>;  </div><div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="structthread__fich.html#ae1e9264c260dc54a211958317c19c5a3">   73</a></span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="structthread__fich.html#ae1e9264c260dc54a211958317c19c5a3">nick</a>; </div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">void</span>* <a class="code" href="G-2313-07-P2-ClientFunctions_8h.html#ad801433c79f579216f3031417403583b">IRC_Client_Recieve</a>(<span class="keywordtype">void</span>* thr_info);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">void</span>* <a class="code" href="G-2313-07-P2-ClientFunctions_8h.html#a3d9042e338c4d5cb1d058b64db227f46">IRC_Client_Ping</a>(<span class="keywordtype">void</span>* thr_info);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">void</span>* <a class="code" href="G-2313-07-P2-ClientFunctions_8h.html#a3254117667a66dff69253110c94968cd">IRC_Client_Who</a>(<span class="keywordtype">void</span>* thr_info);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">void</span>* <a class="code" href="G-2313-07-P2-ClientFunctions_8h.html#a793bc04547f2b58aaebfe694471d4db6">IRC_Send_File</a>(<span class="keywordtype">void</span>* thr_fich_info);</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keywordtype">void</span>* <a class="code" href="G-2313-07-P2-ClientFunctions_8h.html#a93f5a0e561fa9f97a1a59568260768d5">IRC_Accept_File</a>(<span class="keywordtype">void</span>* fmsg);</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="G-2313-07-P2-ClientFunctions_8h_html_a93f5a0e561fa9f97a1a59568260768d5"><div class="ttname"><a href="G-2313-07-P2-ClientFunctions_8h.html#a93f5a0e561fa9f97a1a59568260768d5">IRC_Accept_File</a></div><div class="ttdeci">void * IRC_Accept_File(void *fmsg)</div><div class="ttdoc">Accepta el recibimiento de información. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8c_source.html#l00446">G-2313-07-P2-ClientFunctions.c:446</a></div></div>
+<div class="ttc" id="G-2313-07-P2-ClientFunctions_8h_html_ad801433c79f579216f3031417403583b"><div class="ttname"><a href="G-2313-07-P2-ClientFunctions_8h.html#ad801433c79f579216f3031417403583b">IRC_Client_Recieve</a></div><div class="ttdeci">void * IRC_Client_Recieve(void *thr_info)</div><div class="ttdoc">Recibe los mensajes del servidor y llama a el parseador de respuestas para mostrar la información en ...</div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8c_source.html#l00088">G-2313-07-P2-ClientFunctions.c:88</a></div></div>
+<div class="ttc" id="G-2313-07-P2-ClientFunctions_8h_html_a3254117667a66dff69253110c94968cd"><div class="ttname"><a href="G-2313-07-P2-ClientFunctions_8h.html#a3254117667a66dff69253110c94968cd">IRC_Client_Who</a></div><div class="ttdeci">void * IRC_Client_Who(void *thr_info)</div><div class="ttdoc">Envia un mensaje de WHO al servidor cada 30 segundos. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8c_source.html#l00230">G-2313-07-P2-ClientFunctions.c:230</a></div></div>
+<div class="ttc" id="structthread__info_html_a0143db75df8efac60d9cc21a133dcbff"><div class="ttname"><a href="structthread__info.html#a0143db75df8efac60d9cc21a133dcbff">thread_info::addrlen</a></div><div class="ttdeci">int addrlen</div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8h_source.html#l00060">G-2313-07-P2-ClientFunctions.h:60</a></div></div>
+<div class="ttc" id="structconexion_html_ae901c274bc77ace61d474d067c603612"><div class="ttname"><a href="structconexion.html#ae901c274bc77ace61d474d067c603612">conexion::password</a></div><div class="ttdeci">char * password</div><div class="ttdoc">Password del cliente. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8h_source.html#l00048">G-2313-07-P2-ClientFunctions.h:48</a></div></div>
+<div class="ttc" id="structthread__info_html_a264b1e24a81f54cdcb20b4de69d92fc4"><div class="ttname"><a href="structthread__info.html#a264b1e24a81f54cdcb20b4de69d92fc4">thread_info::datalen</a></div><div class="ttdeci">long datalen</div><div class="ttdoc">Longitud de los datos que se van a enviar (Fichero) </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8h_source.html#l00062">G-2313-07-P2-ClientFunctions.h:62</a></div></div>
+<div class="ttc" id="structconexion_html_a099a101a872153a5279cce96e567097e"><div class="ttname"><a href="structconexion.html#a099a101a872153a5279cce96e567097e">conexion::port</a></div><div class="ttdeci">int port</div><div class="ttdoc">Puerto al que se conecta el cliente. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8h_source.html#l00050">G-2313-07-P2-ClientFunctions.h:50</a></div></div>
+<div class="ttc" id="structconexion_html_ae7ea11bfda1a85791e291e1a2071f2f6"><div class="ttname"><a href="structconexion.html#ae7ea11bfda1a85791e291e1a2071f2f6">conexion::realname</a></div><div class="ttdeci">char * realname</div><div class="ttdoc">Realnme del cliente. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8h_source.html#l00047">G-2313-07-P2-ClientFunctions.h:47</a></div></div>
+<div class="ttc" id="structconexion_html"><div class="ttname"><a href="structconexion.html">conexion</a></div><div class="ttdoc">Estructura con la informacion de la conexion. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8h_source.html#l00044">G-2313-07-P2-ClientFunctions.h:44</a></div></div>
+<div class="ttc" id="structthread__info_html"><div class="ttname"><a href="structthread__info.html">thread_info</a></div><div class="ttdoc">Estructura con información necesaria para las llamadas que hará el hilo. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8h_source.html#l00057">G-2313-07-P2-ClientFunctions.h:57</a></div></div>
+<div class="ttc" id="structthread__fich_html_aafa4a122b40f0af01b1fee9f1d41948e"><div class="ttname"><a href="structthread__fich.html#aafa4a122b40f0af01b1fee9f1d41948e">thread_fich::datalen</a></div><div class="ttdeci">long unsigned datalen</div><div class="ttdoc">Longitud del contenido del fichero. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8h_source.html#l00072">G-2313-07-P2-ClientFunctions.h:72</a></div></div>
+<div class="ttc" id="G-2313-07-P2-ClientFunctions_8h_html_a3d9042e338c4d5cb1d058b64db227f46"><div class="ttname"><a href="G-2313-07-P2-ClientFunctions_8h.html#a3d9042e338c4d5cb1d058b64db227f46">IRC_Client_Ping</a></div><div class="ttdeci">void * IRC_Client_Ping(void *thr_info)</div><div class="ttdoc">Envia un mensaje de PING al servidor cada 30 segundos. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8c_source.html#l00153">G-2313-07-P2-ClientFunctions.c:153</a></div></div>
+<div class="ttc" id="structthread__fich_html_a3f5e3365234edf2ffd06b4a7fbe37db3"><div class="ttname"><a href="structthread__fich.html#a3f5e3365234edf2ffd06b4a7fbe37db3">thread_fich::filename</a></div><div class="ttdeci">char * filename</div><div class="ttdoc">Nombre del del fichero. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8h_source.html#l00070">G-2313-07-P2-ClientFunctions.h:70</a></div></div>
+<div class="ttc" id="structthread__fich_html_ad208ac2395638123c1e980317a84e41b"><div class="ttname"><a href="structthread__fich.html#ad208ac2395638123c1e980317a84e41b">thread_fich::data</a></div><div class="ttdeci">char * data</div><div class="ttdoc">Contenido del fichero. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8h_source.html#l00071">G-2313-07-P2-ClientFunctions.h:71</a></div></div>
+<div class="ttc" id="structthread__fich_html"><div class="ttname"><a href="structthread__fich.html">thread_fich</a></div><div class="ttdoc">Estructura con información necesaria para el envio de ficheros. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8h_source.html#l00069">G-2313-07-P2-ClientFunctions.h:69</a></div></div>
+<div class="ttc" id="structconexion_html_a738b6033c5caff3f179208de41f8044f"><div class="ttname"><a href="structconexion.html#a738b6033c5caff3f179208de41f8044f">conexion::desc</a></div><div class="ttdeci">int desc</div><div class="ttdoc">Descriptor del socket del cliente. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8h_source.html#l00051">G-2313-07-P2-ClientFunctions.h:51</a></div></div>
+<div class="ttc" id="structconexion_html_a1f101780e5a4a2ce18240e9fae831174"><div class="ttname"><a href="structconexion.html#a1f101780e5a4a2ce18240e9fae831174">conexion::user</a></div><div class="ttdeci">char * user</div><div class="ttdoc">Usuario del cliente. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8h_source.html#l00046">G-2313-07-P2-ClientFunctions.h:46</a></div></div>
+<div class="ttc" id="structthread__info_html_a504eee76cfedb354d17045efee177c5f"><div class="ttname"><a href="structthread__info.html#a504eee76cfedb354d17045efee177c5f">thread_info::data</a></div><div class="ttdeci">char * data</div><div class="ttdoc">Contenido a enviar. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8h_source.html#l00061">G-2313-07-P2-ClientFunctions.h:61</a></div></div>
+<div class="ttc" id="G-2313-07-P2-ClientFunctions_8h_html_a793bc04547f2b58aaebfe694471d4db6"><div class="ttname"><a href="G-2313-07-P2-ClientFunctions_8h.html#a793bc04547f2b58aaebfe694471d4db6">IRC_Send_File</a></div><div class="ttdeci">void * IRC_Send_File(void *thr_fich_info)</div><div class="ttdoc">Envia un mensaje para el envio de información. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8c_source.html#l00280">G-2313-07-P2-ClientFunctions.c:280</a></div></div>
+<div class="ttc" id="structconexion_html_a152beed50a7282ad63198a5ecf6d5c78"><div class="ttname"><a href="structconexion.html#a152beed50a7282ad63198a5ecf6d5c78">conexion::nick</a></div><div class="ttdeci">char * nick</div><div class="ttdoc">Nick del cliente. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8h_source.html#l00045">G-2313-07-P2-ClientFunctions.h:45</a></div></div>
+<div class="ttc" id="G-2313-07-P2-ClientParser_8h_html"><div class="ttname"><a href="G-2313-07-P2-ClientParser_8h.html">G-2313-07-P2-ClientParser.h</a></div><div class="ttdoc">Cabeceras de los parseadores del Cliente. </div></div>
+<div class="ttc" id="structconexion_html_a132b049b9c92a4bbb6dbb3c2a303c047"><div class="ttname"><a href="structconexion.html#a132b049b9c92a4bbb6dbb3c2a303c047">conexion::server</a></div><div class="ttdeci">char * server</div><div class="ttdoc">Server del cliente. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8h_source.html#l00049">G-2313-07-P2-ClientFunctions.h:49</a></div></div>
+<div class="ttc" id="structthread__info_html_ac51944f9d3685a4cf1b6fd846f4b89d6"><div class="ttname"><a href="structthread__info.html#ac51944f9d3685a4cf1b6fd846f4b89d6">thread_info::sd</a></div><div class="ttdeci">int sd</div><div class="ttdoc">Descriptor del socket del cliente. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8h_source.html#l00058">G-2313-07-P2-ClientFunctions.h:58</a></div></div>
+<div class="ttc" id="structthread__info_html_a0511b614aa26392adcc64f8cb2c397e1"><div class="ttname"><a href="structthread__info.html#a0511b614aa26392adcc64f8cb2c397e1">thread_info::nick</a></div><div class="ttdeci">char * nick</div><div class="ttdoc">Nick del cliente. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8h_source.html#l00063">G-2313-07-P2-ClientFunctions.h:63</a></div></div>
+<div class="ttc" id="structthread__fich_html_ae1e9264c260dc54a211958317c19c5a3"><div class="ttname"><a href="structthread__fich.html#ae1e9264c260dc54a211958317c19c5a3">thread_fich::nick</a></div><div class="ttdeci">char * nick</div><div class="ttdoc">Nick del cliente. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P2-ClientFunctions_8h_source.html#l00073">G-2313-07-P2-ClientFunctions.h:73</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_ec79a16b3c643b5d7f88bdb8a4a0cf13.html">G-2313-07-P2</a></li><li class="navelem"><a class="el" href="dir_516be947c0f248226872432f802d5dae.html">includes</a></li><li class="navelem"><a class="el" href="G-2313-07-P2-ClientFunctions_8h.html">G-2313-07-P2-ClientFunctions.h</a></li>
+    <li class="footer">Generado el Lunes, 8 de Mayo de 2017 00:52:26 para Redes de Comunicaciones 2 por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

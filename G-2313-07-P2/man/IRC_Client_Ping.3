@@ -1,0 +1,52 @@
+.TH "IRC_Client_Ping" 3 "Lunes, 8 de Mayo de 2017" "Version Versión&nbsp;1.0" "Redes de Comunicaciones 2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IRC_Client_Ping \- IRC_Client_Ping 
+Envia un mensaje de PING al servidor cada 30 segundos
+.PP
+.SS "Synopsis"
+.PP
+.PP
+.nf
+#include "includes/G\-2313\-07\-P2\-ClientFunctions\&.h"
+
+void* IRC_Client_Ping(void* thr_info)
+.fi
+.PP
+.PP
+.SS "Descripción"
+.PP
+Esta función esta diseñada para que la ejecute un hilo encargado de ella exclusivamente, por ello recibe por parámetro un puntero a la estructura \fBthread_info\fP donde se encuentra la información necesaria para el correcto funcionamiento de la función\&.
+.br
+.PP
+Esta función va a estar ejecutandose hasta que el se cierre el cliente, o el servidor cierre la conexión\&. Su principal función es comprobar que el servidor no ha cerrado la conexión y sigue estando disponible\&. Cada 30 segundos envía un mensaje PING al servidor, de esta manera comprueba si se ha cerrado o no la conexión\&.
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIthr_info\fP Puntero a la estructura \fBthread_info\fP con la información sobre el descriptor del socket del cliente\&.
+.RE
+.PP
+\fBAtención:\fP
+.RS 4
+Esta función está diseñada para que sea ejecutada por un hilo
+.RE
+.PP
+.PP
+.PP
+.SS "Información"
+.PP
+\fBAutores:\fP
+.RS 4
+Alfonso Bonilla Trueba (alfonso.bonilla@estudiante.uam.es) 
+.PP
+Mónica de la Iglesia Martínez (monica.delaiglesia@estudiante.uam.es) 
+.RE
+.PP
+\fBCopyright:\fP
+.RS 4
+Pareja 7 - Grupo 2313
+.RE
+.PP
+.PP
+ 

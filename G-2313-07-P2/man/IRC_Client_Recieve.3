@@ -1,0 +1,54 @@
+.TH "IRC_Client_Recieve" 3 "Lunes, 8 de Mayo de 2017" "Version Versión&nbsp;1.0" "Redes de Comunicaciones 2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IRC_Client_Recieve \- IRC_Client_Recieve 
+Recibe las respuestas del servidor y las manda a parsear
+.PP
+.SS "Synopsis"
+.PP
+.PP
+.nf
+#include "includes/G\-2313\-07\-P2\-ClientFunctions\&.h"
+
+void* IRC_Client_Recieve(void* thr_info)
+.fi
+.PP
+.PP
+.SS "Descripción"
+.PP
+Esta función se encarga de estar permanentemente recibiendo mensajes del servidor mientras la conexión esté activa\&. Una vez recibido el mensaje,lo dividirá en comandos puesto que en un mismo mensaje pueden venir mas de un comando\&. Cada comando recibido se enviará a pasear para mostrar en el cliente la información de manera entendible y no a modo de comando\&.
+.PP
+En caso de que no reciva un mensaje vacio entenderá que el servidor ha cerrado la conexión y el hilo encargado de esta función finalizará\&.
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIthr_info\fP Puntero a la información del hilo que se va a hacer cargo de estar ejecutando esta función hasta que se cierre la conexión con el servidor
+.RE
+.PP
+\fBNota:\fP
+.RS 4
+Cuando se dectecte que el servidor se ha desconectado la función se encarga de hacer kill al hilo que ejecutaba\&.
+.RE
+.PP
+\fBAtención:\fP
+.RS 4
+Esta función está diseñada para que sea ejecutada por un hilo
+.RE
+.PP
+.SS "Información"
+.PP
+\fBAutores:\fP
+.RS 4
+Alfonso Bonilla Trueba (alfonso.bonilla@estudiante.uam.es) 
+.PP
+Mónica de la Iglesia Martínez (monica.delaiglesia@estudiante.uam.es) 
+.RE
+.PP
+\fBCopyright:\fP
+.RS 4
+Pareja 7 - Grupo 2313
+.RE
+.PP
+.PP
+ 

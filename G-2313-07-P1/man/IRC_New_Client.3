@@ -1,0 +1,49 @@
+.TH "IRC_New_Client" 3 "Lunes, 8 de Mayo de 2017" "Version Versión&nbsp;1.1" "Redes de Comunicaciones 2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IRC_New_Client \- IRC_New_Client 
+Se encarga de esperar mensajes del cliente
+.PP
+.SS "Synopsis"
+.PP
+.PP
+.nf
+#include "includes/G\-2313\-07\-P1\-server\&.h"
+
+void* IRC_New_Client(void* valor)
+.fi
+.PP
+.PP
+.SS "Descripción"
+.PP
+Esta función esta siempre esperando mensajes del cliente, los cuales dividira por si ha recibido mas de un comando en el mismo mensaje, puesto que el maximo de IRC es 512 por cada mensaje\&. A continuacion enviara este mensaje a parsear y ejecutar\&. Adicionalmente esta función hace uso de otras para comprobar si el usuario ha cerrado conexión sin hacer QUIT
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIvalor\fP puntero void al descriptor del usuario
+.RE
+.PP
+\fBNota:\fP
+.RS 4
+Esta función se encarga de liberar la memoria reservada por el cliente\&.
+.RE
+.PP
+.PP
+.PP
+.SS "Información"
+.PP
+\fBAutores:\fP
+.RS 4
+Alfonso Bonilla Trueba (alfonso.bonilla@estudiante.uam.es) 
+.PP
+Mónica de la Iglesia Martínez (monica.delaiglesia@estudiante.uam.es) 
+.RE
+.PP
+\fBCopyright:\fP
+.RS 4
+Pareja 7 - Grupo 2313
+.RE
+.PP
+.PP
+ 

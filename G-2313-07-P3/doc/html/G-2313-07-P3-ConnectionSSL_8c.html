@@ -1,0 +1,495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Redes de Comunicaciones 2: Referencia del Archivo G-2313-07-P3/srclib/G-2313-07-P3-ConnectionSSL.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="uam-noticia.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Redes de Comunicaciones 2
+   &#160;<span id="projectnumber">Versión&nbsp;1.2</span>
+   </div>
+   <div id="projectbrief">Documentación&nbsp;sobre&nbsp;las&nbsp;funciones&nbsp;de&nbsp;inicializacion&nbsp;y&nbsp;ejecucion&nbsp;del&nbsp;Servidor&nbsp;y&nbsp;Cliente&nbsp;IRC&nbsp;con&nbsp;seguridad&nbsp;SSL</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('G-2313-07-P3-ConnectionSSL_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo G-2313-07-P3-ConnectionSSL.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Funciones para el manejo de canales seguros.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="G-2313-07-P3-ConnectionSSL_8h_source.html">../includes/G-2313-07-P3-ConnectionSSL.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Dependencia gráfica adjunta para G-2313-07-P3-ConnectionSSL.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="G-2313-07-P3-ConnectionSSL_8c__incl.png" border="0" usemap="#G-2313-07-P3_2srclib_2G-2313-07-P3-ConnectionSSL_8c" alt=""/></div>
+<map name="G-2313-07-P3_2srclib_2G-2313-07-P3-ConnectionSSL_8c" id="G-2313-07-P3_2srclib_2G-2313-07-P3-ConnectionSSL_8c">
+<area shape="rect" id="node2" href="G-2313-07-P3-ConnectionSSL_8h.html" title="Cabeceras funciones asociadas para el uso de canales seguros. " alt="" coords="901,95,1067,136"/>
+</map>
+</div>
+</div>
+<p><a href="G-2313-07-P3-ConnectionSSL_8c_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a937108af8fd0832377b084e24172ee41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="G-2313-07-P3-ConnectionSSL_8c.html#a937108af8fd0832377b084e24172ee41">inicializar_nivel_SSL</a> ()</td></tr>
+<tr class="memdesc:a937108af8fd0832377b084e24172ee41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preparación para poder usar la capa SSL.  <a href="#a937108af8fd0832377b084e24172ee41">Más...</a><br /></td></tr>
+<tr class="separator:a937108af8fd0832377b084e24172ee41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a574fa8b063f8ae05d38088da01a5f5c1"><td class="memItemLeft" align="right" valign="top">SSL_CTX *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="G-2313-07-P3-ConnectionSSL_8c.html#a574fa8b063f8ae05d38088da01a5f5c1">fijar_contexto_SSL</a> (char *ca_certificado, char *certificado)</td></tr>
+<tr class="memdesc:a574fa8b063f8ae05d38088da01a5f5c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa el conxtexito que va a ser usado en el canal seguro.  <a href="#a574fa8b063f8ae05d38088da01a5f5c1">Más...</a><br /></td></tr>
+<tr class="separator:a574fa8b063f8ae05d38088da01a5f5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5328356f3cd63029db3b662d4327779"><td class="memItemLeft" align="right" valign="top">SSL *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="G-2313-07-P3-ConnectionSSL_8c.html#ae5328356f3cd63029db3b662d4327779">conectar_canal_seguro_SSL</a> (SSL_CTX *contexto, int *desc, int puerto, char *host)</td></tr>
+<tr class="memdesc:ae5328356f3cd63029db3b662d4327779"><td class="mdescLeft">&#160;</td><td class="mdescRight">Se encarga de iniciar el proceso de handshake.  <a href="#ae5328356f3cd63029db3b662d4327779">Más...</a><br /></td></tr>
+<tr class="separator:ae5328356f3cd63029db3b662d4327779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd7dd465262da92b5eb829bed9c6e2b2"><td class="memItemLeft" align="right" valign="top">SSL *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="G-2313-07-P3-ConnectionSSL_8c.html#abd7dd465262da92b5eb829bed9c6e2b2">aceptar_canal_seguro_SSL</a> (SSL_CTX *contexto, int *desc, struct sockaddr *datos_cliente, int puerto)</td></tr>
+<tr class="memdesc:abd7dd465262da92b5eb829bed9c6e2b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bloquea la apliación esperando el handshake del cliente.  <a href="#abd7dd465262da92b5eb829bed9c6e2b2">Más...</a><br /></td></tr>
+<tr class="separator:abd7dd465262da92b5eb829bed9c6e2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f15a018070f611fb52fb42c01daf391"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="G-2313-07-P3-ConnectionSSL_8c.html#a5f15a018070f611fb52fb42c01daf391">evaluar_post_connectar_SSL</a> (const SSL *ssl)</td></tr>
+<tr class="memdesc:a5f15a018070f611fb52fb42c01daf391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comprueba la seguridad despueés del handshake.  <a href="#a5f15a018070f611fb52fb42c01daf391">Más...</a><br /></td></tr>
+<tr class="separator:a5f15a018070f611fb52fb42c01daf391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc1fe9fe7c31f7e6d8d75862f665fc48"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="G-2313-07-P3-ConnectionSSL_8c.html#afc1fe9fe7c31f7e6d8d75862f665fc48">enviar_datos_SSL</a> (SSL *ssl, const void *data)</td></tr>
+<tr class="memdesc:afc1fe9fe7c31f7e6d8d75862f665fc48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envia cualquier tipo de datos por un canal seguro.  <a href="#afc1fe9fe7c31f7e6d8d75862f665fc48">Más...</a><br /></td></tr>
+<tr class="separator:afc1fe9fe7c31f7e6d8d75862f665fc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28afc7e23c67c1f51cc9d117a54544d6"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="G-2313-07-P3-ConnectionSSL_8c.html#a28afc7e23c67c1f51cc9d117a54544d6">recibir_datos_SSL</a> (SSL *ssl, void *data, int longitud)</td></tr>
+<tr class="memdesc:a28afc7e23c67c1f51cc9d117a54544d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recibe cualquier tipo de datos por un canal seguro.  <a href="#a28afc7e23c67c1f51cc9d117a54544d6">Más...</a><br /></td></tr>
+<tr class="separator:a28afc7e23c67c1f51cc9d117a54544d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ac01b18e62f1b713d4d10f7b17edfa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="G-2313-07-P3-ConnectionSSL_8c.html#a04ac01b18e62f1b713d4d10f7b17edfa">cerrar_canal_SSL</a> (SSL *ssl, SSL_CTX *contexto, int socket)</td></tr>
+<tr class="memdesc:a04ac01b18e62f1b713d4d10f7b17edfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libera y cierra canal seguro.  <a href="#a04ac01b18e62f1b713d4d10f7b17edfa">Más...</a><br /></td></tr>
+<tr class="separator:a04ac01b18e62f1b713d4d10f7b17edfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Funciones para el manejo de canales seguros. </p>
+<dl class="section author"><dt>Autores</dt><dd>Alfonso Bonilla Trueba (<a href="#" onclick="location.href='mai'+'lto:'+'alf'+'on'+'so.'+'bo'+'nil'+'la'+'@es'+'tu'+'dia'+'nt'+'e.u'+'am'+'.es'; return false;">alfon<span style="display: none;">.nosp@m.</span>so.b<span style="display: none;">.nosp@m.</span>onill<span style="display: none;">.nosp@m.</span>a@es<span style="display: none;">.nosp@m.</span>tudia<span style="display: none;">.nosp@m.</span>nte.<span style="display: none;">.nosp@m.</span>uam.e<span style="display: none;">.nosp@m.</span>s</a>) </dd>
+<dd>
+Mónica de la Iglesia Martínez (<a href="#" onclick="location.href='mai'+'lto:'+'mon'+'ic'+'a.d'+'el'+'aig'+'le'+'sia'+'@e'+'stu'+'di'+'ant'+'e.'+'uam'+'.e'+'s'; return false;">monic<span style="display: none;">.nosp@m.</span>a.de<span style="display: none;">.nosp@m.</span>laigl<span style="display: none;">.nosp@m.</span>esia<span style="display: none;">.nosp@m.</span>@estu<span style="display: none;">.nosp@m.</span>dian<span style="display: none;">.nosp@m.</span>te.ua<span style="display: none;">.nosp@m.</span>m.es</a>) </dd></dl>
+<dl class="section version"><dt>Versión</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>11-04-2017 </dd></dl>
+
+<p>Definición en el archivo <a class="el" href="G-2313-07-P3-ConnectionSSL_8c_source.html">G-2313-07-P3-ConnectionSSL.c</a>.</p>
+</div><h2 class="groupheader">Documentación de las funciones</h2>
+<a class="anchor" id="abd7dd465262da92b5eb829bed9c6e2b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SSL* aceptar_canal_seguro_SSL </td>
+          <td>(</td>
+          <td class="paramtype">SSL_CTX *&#160;</td>
+          <td class="paramname"><em>contexto</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct sockaddr *&#160;</td>
+          <td class="paramname"><em>datos_cliente</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>puerto</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bloquea la apliación esperando el handshake del cliente. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">contexto</td><td>Contexto de la conexión SSL </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">desc</td><td>Puntero al descriptor del socket </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">datos_cliente</td><td>Puntero a estructura sockaddr con los datos del cliente </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">puerto</td><td>El numero del puerto que se va a usar en la conexión </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="G-2313-07-P3-ConnectionSSL_8c_source.html#l00297">297</a> del archivo <a class="el" href="G-2313-07-P3-ConnectionSSL_8c_source.html">G-2313-07-P3-ConnectionSSL.c</a>.</p>
+
+<p>Hace referencia a <a class="el" href="G-2313-07-P3-ConnectionSSL_8h_source.html#l00033">TAM_COLA</a>.</p>
+<div class="fragment"><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;{</div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  <span class="keywordtype">int</span> nuevo_socket;</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  socklen_t c = 1;</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  socklen_t len;</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <span class="keyword">struct </span>sockaddr_in direccion;</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  SSL* ssl;</div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    len = <span class="keyword">sizeof</span>(*datos_cliente);</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  <span class="keywordflow">if</span>(contexto == NULL || desc == NULL || datos_cliente == NULL || puerto &lt;0)</div><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordflow">return</span> NULL;</div><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  <span class="comment">/*Creamos el socket TCP*/</span></div><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  *desc = socket(AF_INET, SOCK_STREAM, 6); <span class="comment">/*TCP 6*/</span> <span class="comment">/*UDP 17*/</span></div><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  setsockopt(*desc, SOL_SOCKET, SO_REUSEADDR, (<span class="keywordtype">char</span> *)&amp;c, <span class="keyword">sizeof</span>(c));</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  syslog(LOG_INFO, <span class="stringliteral">&quot;SERVER SSL : He creado un nuevo socket wiii&quot;</span>);</div><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    direccion.sin_family = AF_INET;</div><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    direccion.sin_port = htons(puerto);</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    direccion.sin_addr.s_addr = INADDR_ANY;</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    bind(*desc, (<span class="keyword">struct</span> sockaddr*) &amp;direccion, <span class="keyword">sizeof</span>(direccion));</div><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  syslog(LOG_INFO, <span class="stringliteral">&quot;SERVER SSL : bind hecho&quot;</span>);</div><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  listen(*desc, <a class="code" href="G-2313-07-P3-ConnectionSSL_8h.html#adcde01cfb17e290ce6dfa0b76e78f474">TAM_COLA</a>);</div><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  syslog(LOG_INFO, <span class="stringliteral">&quot;SERVER SSL : listen hecho&quot;</span>);</div><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  nuevo_socket = accept(*desc, datos_cliente, &amp;len);</div><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  syslog(LOG_INFO, <span class="stringliteral">&quot;SERVER SSL : accept hecho&quot;</span>);</div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    ssl = SSL_new(contexto);</div><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordflow">if</span>(ssl == NULL){</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    ERR_print_errors_fp(stdout);</div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keywordflow">return</span> NULL;</div><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  }</div><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  <span class="keywordflow">if</span> (!SSL_set_fd(ssl, nuevo_socket)){</div><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    ERR_print_errors_fp(stdout);</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordflow">return</span> NULL;</div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  }</div><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  <span class="keywordflow">if</span>(!SSL_accept(ssl)){</div><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    ERR_print_errors_fp(stdout);</div><div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordflow">return</span> NULL;</div><div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  }</div><div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div><div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keywordflow">return</span> ssl;</div><div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;}</div><div class="ttc" id="G-2313-07-P3-ConnectionSSL_8h_html_adcde01cfb17e290ce6dfa0b76e78f474"><div class="ttname"><a href="G-2313-07-P3-ConnectionSSL_8h.html#adcde01cfb17e290ce6dfa0b76e78f474">TAM_COLA</a></div><div class="ttdeci">#define TAM_COLA</div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P3-ConnectionSSL_8h_source.html#l00033">G-2313-07-P3-ConnectionSSL.h:33</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a04ac01b18e62f1b713d4d10f7b17edfa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cerrar_canal_SSL </td>
+          <td>(</td>
+          <td class="paramtype">SSL *&#160;</td>
+          <td class="paramname"><em>ssl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SSL_CTX *&#160;</td>
+          <td class="paramname"><em>contexto</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>socket</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Libera y cierra canal seguro. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ssl</td><td>Conexión SSL que se va a cerrar. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">contexto</td><td>Puntero al contexto de la conexión que se va a cerrar. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">socket</td><td>Descriptor del socket de la conexión a cerrar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="G-2313-07-P3-ConnectionSSL_8c_source.html#l00533">533</a> del archivo <a class="el" href="G-2313-07-P3-ConnectionSSL_8c_source.html">G-2313-07-P3-ConnectionSSL.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;{</div><div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;  <span class="keywordflow">if</span>(ssl == NULL || contexto == NULL || socket &lt; 0)</div><div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    <span class="keywordflow">return</span>;</div><div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;</div><div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;  <span class="keywordflow">if</span>(SSL_shutdown(ssl)!=1){</div><div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    ERR_print_errors_fp(stdout);</div><div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;  }</div><div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;  SSL_free(ssl);</div><div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;  SSL_CTX_free(contexto);</div><div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;  close(socket);</div><div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ae5328356f3cd63029db3b662d4327779"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SSL* conectar_canal_seguro_SSL </td>
+          <td>(</td>
+          <td class="paramtype">SSL_CTX *&#160;</td>
+          <td class="paramname"><em>contexto</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>puerto</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>host</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Se encarga de iniciar el proceso de handshake. </p>
+
+<p>Definición en la línea <a class="el" href="G-2313-07-P3-ConnectionSSL_8c_source.html#l00226">226</a> del archivo <a class="el" href="G-2313-07-P3-ConnectionSSL_8c_source.html">G-2313-07-P3-ConnectionSSL.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;{</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  SSL* ssl;</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  socklen_t c = 1;</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keyword">struct </span>hostent* hostname = gethostbyname(host);</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="keyword">struct </span>sockaddr_in datos_servidor;</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="comment">/*Creamos el socket TCP*/</span></div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  *desc = socket(AF_INET, SOCK_STREAM, 6); <span class="comment">/*TCP 6*/</span> <span class="comment">/*UDP 17*/</span></div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  setsockopt( *desc, SOL_SOCKET, SO_REUSEADDR, (<span class="keywordtype">char</span> *)&amp;c, <span class="keyword">sizeof</span>(c));</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    memcpy(&amp;datos_servidor.sin_addr, hostname-&gt;h_addr_list[0], hostname-&gt;h_length);</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    datos_servidor.sin_family = AF_INET;</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    datos_servidor.sin_port = htons(puerto);</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    connect(*desc, (<span class="keyword">struct</span> sockaddr*) &amp;datos_servidor, <span class="keyword">sizeof</span>(datos_servidor));</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  ssl = SSL_new(contexto);</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="keywordflow">if</span>(ssl == NULL){</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    ERR_print_errors_fp(stdout);</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">return</span> NULL;</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  }</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keywordflow">if</span>(!SSL_set_fd(ssl, *desc)){</div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    ERR_print_errors_fp(stdout);</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordflow">return</span> NULL;</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  }</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="keywordflow">if</span>(!SSL_connect(ssl)){</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    ERR_print_errors_fp(stdout);</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">return</span> NULL;</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  }</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <span class="keywordflow">return</span> ssl;</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="afc1fe9fe7c31f7e6d8d75862f665fc48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long enviar_datos_SSL </td>
+          <td>(</td>
+          <td class="paramtype">SSL *&#160;</td>
+          <td class="paramname"><em>ssl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Envia cualquier tipo de datos por un canal seguro. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ssl</td><td>Conexión SSL sobre la que se van a enviar datos. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Puntero a la variable donde se encuentran los datos a enviar.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">TRUE</td><td>Si los datos se han enviado correctamente. </td></tr>
+    <tr><td class="paramname">FALSE</td><td>En caso de que ocurra algún fallo en el envío de datos. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="G-2313-07-P3-ConnectionSSL_8c_source.html#l00436">436</a> del archivo <a class="el" href="G-2313-07-P3-ConnectionSSL_8c_source.html">G-2313-07-P3-ConnectionSSL.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;{</div><div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  <span class="keywordflow">if</span>(ssl == NULL || data == NULL)</div><div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;</div><div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  <span class="keywordflow">if</span>(!SSL_write(ssl, data, strlen((<span class="keywordtype">char</span>*)data))){</div><div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    ERR_print_errors_fp(stdout);</div><div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  }</div><div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;</div><div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  <span class="keywordflow">return</span> TRUE;</div><div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5f15a018070f611fb52fb42c01daf391"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long evaluar_post_connectar_SSL </td>
+          <td>(</td>
+          <td class="paramtype">const SSL *&#160;</td>
+          <td class="paramname"><em>ssl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Comprueba la seguridad despueés del handshake. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ssl</td><td>Constante de la conexión SSL, no se va a modificar en la función</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">TRUE</td><td>la comunicación a través del canal es segura </td></tr>
+    <tr><td class="paramname">FALSE</td><td>la comunicación a través del canal no es segura </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="G-2313-07-P3-ConnectionSSL_8c_source.html#l00383">383</a> del archivo <a class="el" href="G-2313-07-P3-ConnectionSSL_8c_source.html">G-2313-07-P3-ConnectionSSL.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;{</div><div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  <span class="keywordflow">if</span>(ssl == NULL)</div><div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div><div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  <span class="keywordflow">if</span>(!SSL_get_peer_certificate(ssl)){</div><div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    ERR_print_errors_fp(stdout);</div><div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  }</div><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div><div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  <span class="keywordflow">if</span>(SSL_get_verify_result(ssl) != X509_V_OK){</div><div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    ERR_print_errors_fp(stdout);</div><div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  }</div><div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div><div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  <span class="keywordflow">return</span> TRUE;</div><div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a574fa8b063f8ae05d38088da01a5f5c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SSL_CTX* fijar_contexto_SSL </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ca_certificado</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>certificado</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa el conxtexito que va a ser usado en el canal seguro. </p>
+
+<p>Definición en la línea <a class="el" href="G-2313-07-P3-ConnectionSSL_8c_source.html#l00149">149</a> del archivo <a class="el" href="G-2313-07-P3-ConnectionSSL_8c_source.html">G-2313-07-P3-ConnectionSSL.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;{</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  SSL_CTX* contexto;</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordtype">char</span> CApath [1024];</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordflow">if</span>(ca_certificado == NULL || certificado == NULL)</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">return</span> NULL;</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  contexto = SSL_CTX_new(SSLv23_method());</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  ERR_print_errors_fp(stdout);</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordflow">if</span>(!contexto){</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    ERR_print_errors_fp(stdout);</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">return</span> NULL;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  }</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  SSL_CTX_set_verify(contexto, SSL_VERIFY_PEER, NULL);</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keywordflow">if</span>(!SSL_CTX_load_verify_locations(contexto, ca_certificado, CApath)){</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    ERR_print_errors_fp(stdout);</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> NULL;</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  }</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  SSL_CTX_set_default_verify_paths(contexto);</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordflow">if</span>(!SSL_CTX_use_certificate_file(contexto, certificado, SSL_FILETYPE_PEM)){</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    printf(<span class="stringliteral">&quot;PETA EL USE CER\n&quot;</span> );</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    ERR_print_errors_fp(stdout);</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">return</span> NULL;</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  }</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordflow">if</span>(!SSL_CTX_use_PrivateKey_file(contexto, certificado, SSL_FILETYPE_PEM)){</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    ERR_print_errors_fp(stdout);</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordflow">return</span> NULL;</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  }</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  SSL_CTX_set_verify(contexto, SSL_VERIFY_PEER | SSL_VERIFY_FAIL_IF_NO_PEER_CERT, NULL);</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordflow">if</span>(!SSL_CTX_load_verify_locations(contexto, ca_certificado, CApath)){</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    ERR_print_errors_fp(stdout);</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">return</span> NULL;</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  }</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keywordflow">return</span> contexto;</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a937108af8fd0832377b084e24172ee41"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void inicializar_nivel_SSL </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Preparación para poder usar la capa SSL. </p>
+
+<p>Definición en la línea <a class="el" href="G-2313-07-P3-ConnectionSSL_8c_source.html#l00112">112</a> del archivo <a class="el" href="G-2313-07-P3-ConnectionSSL_8c_source.html">G-2313-07-P3-ConnectionSSL.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  SSL_load_error_strings();</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  SSL_library_init();</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  ERR_print_errors_fp(stdout);</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a28afc7e23c67c1f51cc9d117a54544d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long recibir_datos_SSL </td>
+          <td>(</td>
+          <td class="paramtype">SSL *&#160;</td>
+          <td class="paramname"><em>ssl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>longitud</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recibe cualquier tipo de datos por un canal seguro. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ssl</td><td>Conexión SSL sobre la que se van a recibir datos. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Puntero a la variable donde se quieren guardar los datos recibidos. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">longitud</td><td>Tamaño máximo que se quiere recibir.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">TRUE</td><td>Si los datos se han recibido correctamente </td></tr>
+    <tr><td class="paramname">FALSE</td><td>En caso de que ocurra algún fallo en la recepción de datos </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="G-2313-07-P3-ConnectionSSL_8c_source.html#l00485">485</a> del archivo <a class="el" href="G-2313-07-P3-ConnectionSSL_8c_source.html">G-2313-07-P3-ConnectionSSL.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;{</div><div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;  <span class="keywordtype">int</span> recibido;</div><div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;</div><div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;  <span class="keywordflow">if</span>(ssl == NULL || data == NULL || longitud &lt; 0)</div><div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;</div><div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  recibido = SSL_read(ssl, data, longitud);</div><div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;</div><div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  <span class="keywordflow">if</span>(recibido &lt;= 0){</div><div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    ERR_print_errors_fp(stdout);</div><div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;  }</div><div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;</div><div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;  <span class="keywordflow">return</span> TRUE;</div><div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_ca5cbe0ffc65289cd69ae021fa67ca14.html">G-2313-07-P3</a></li><li class="navelem"><a class="el" href="dir_85bfea5164db060130838ed5d2ff2d6c.html">srclib</a></li><li class="navelem"><a class="el" href="G-2313-07-P3-ConnectionSSL_8c.html">G-2313-07-P3-ConnectionSSL.c</a></li>
+    <li class="footer">Generado el Lunes, 8 de Mayo de 2017 00:52:27 para Redes de Comunicaciones 2 por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Redes de Comunicaciones 2: Fichero Fuente G-2313-07-P1/srclib/G-2313-07-P1-utilities.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="uam-noticia.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Redes de Comunicaciones 2
+   &#160;<span id="projectnumber">Versión&nbsp;1.1</span>
+   </div>
+   <div id="projectbrief">Documentación&nbsp;sobre&nbsp;las&nbsp;funciones&nbsp;de&nbsp;inicializacion&nbsp;y&nbsp;ejecucion&nbsp;del&nbsp;Servidor&nbsp;IRC</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('G-2313-07-P1-utilities_8c_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">G-2313-07-P1-utilities.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="G-2313-07-P1-utilities_8c.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;../includes/G-2313-07-P1-utilities.h&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="G-2313-07-P1-utilities_8c.html#a79f6ea5350079c571138b0a00af1f5a4">   86</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="G-2313-07-P1-utilities_8c.html#a79f6ea5350079c571138b0a00af1f5a4">daemonizar</a>()</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    pid_t pid;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    pid = fork(); <span class="comment">/*Fork off the parent process*/</span></div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span> (pid &lt; 0) exit(EXIT_FAILURE);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span> (pid &gt; 0) exit(EXIT_SUCCESS); <span class="comment">/*Exiting the parent process.*/</span></div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    umask(0); <span class="comment">/*Change the file mode mask*/</span></div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    setlogmask (LOG_UPTO (LOG_INFO)); <span class="comment">/*Open logs here*/</span></div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    openlog (<span class="stringliteral">&quot;Server system messages:&quot;</span>, LOG_CONS | LOG_PID | LOG_NDELAY, LOG_LOCAL3);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    syslog (LOG_ERR, <span class="stringliteral">&quot;Initiating new server&quot;</span>);</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">if</span> (setsid()&lt; 0) { <span class="comment">/*Create a new SID for the child process*/</span></div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        syslog (LOG_ERR, <span class="stringliteral">&quot;Error creating a new SID for the child process.&quot;</span>);</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        exit(EXIT_FAILURE);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">if</span> ((chdir(<span class="stringliteral">&quot;/&quot;</span>)) &lt; 0) { <span class="comment">/*Change the current working directory*/</span></div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        syslog (LOG_ERR, <span class="stringliteral">&quot;Error changing the current working directory =\&quot;/\&quot;&quot;</span>);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        exit(EXIT_FAILURE);</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    syslog (LOG_INFO, <span class="stringliteral">&quot;Closing standard file descriptors&quot;</span>);</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    close(STDIN_FILENO); close(STDOUT_FILENO); close(STDERR_FILENO); <span class="comment">/*Close out thestandard file descriptors*/</span></div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">return</span>;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div><div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="G-2313-07-P1-utilities_8c.html#ad4b63b1ef4b2f72d69a8fd08144a2211">  147</a></span>&#160;<span class="keywordtype">long</span> <a class="code" href="G-2313-07-P1-utilities_8c.html#ad4b63b1ef4b2f72d69a8fd08144a2211">isClosed</a>(<span class="keywordtype">int</span> desc)</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;{</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">int</span> actividad;</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    fd_set readfds;</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keyword">struct </span>timeval timeout;</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    FD_ZERO(&amp;readfds);</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    FD_SET(desc, &amp;readfds);</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    timeout.tv_sec = 0;</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    timeout.tv_usec = 10000;</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    actividad = select(desc, &amp;readfds, NULL, NULL, &amp;timeout);</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">if</span>((actividad &lt; 0) &amp;&amp; (errno != EINTR)){</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">return</span> TRUE;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }<span class="keywordflow">else</span>{</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div><div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="G-2313-07-P1-utilities_8c.html#a2f1ed6f3e07193ac52e343bf4b917bb4">  198</a></span>&#160;<span class="keywordtype">long</span> <a class="code" href="G-2313-07-P1-utilities_8c.html#a2f1ed6f3e07193ac52e343bf4b917bb4">exist_User</a>(<span class="keywordtype">char</span> *nick)</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;{</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordtype">char</span> *unknown_user = NULL, *unknown_real = NULL;</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordtype">long</span> unknown_id = 0;</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">char</span> *host, *IP, *away;</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordtype">int</span> sock = 0;</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordtype">long</span> creationTS, actionTS;</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="comment">/* Obtiene todos los parámetros a partir del nick*/</span></div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">if</span>(IRCTADUser_GetData (&amp;unknown_id, &amp;unknown_user, &amp;nick, &amp;unknown_real, &amp;host, &amp;IP, &amp;sock, &amp;creationTS, &amp;actionTS, &amp;away) == IRC_OK){</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="comment">/*Encontrado un usario con el nick dado*/</span></div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        free(unknown_user);</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        free(unknown_real);</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        free(host);</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        free(IP);</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        free(away);</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keywordflow">return</span> TRUE;</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    }</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;}</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div><div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="G-2313-07-P1-utilities_8c.html#a4dc7811f99176698941be68cc7ff6200">  252</a></span>&#160;<span class="keywordtype">long</span> <a class="code" href="G-2313-07-P1-utilities_8c.html#a4dc7811f99176698941be68cc7ff6200">exist_descriptor</a>(<span class="keywordtype">int</span>* desc)</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;{</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordtype">char</span> *unknown_user = NULL, *unknown_real = NULL, *unknown_nick = NULL;</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordtype">long</span> unknown_id = 0;</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordtype">char</span> *host, *IP, *away;</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordtype">long</span> creationTS, actionTS;</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="comment">/* Obtiene todos los parámetros a partir del socket*/</span></div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">if</span>(IRCTADUser_GetData (&amp;unknown_id, &amp;unknown_user, &amp;unknown_nick, &amp;unknown_real, &amp;host, &amp;IP, desc, &amp;creationTS, &amp;actionTS, &amp;away) == IRC_OK){</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        free(unknown_user);</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        free(unknown_nick);</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        free(unknown_real);</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        free(host);</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        free(IP);</div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        free(away);</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordflow">return</span> TRUE;</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    }</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div><div class="ttc" id="G-2313-07-P1-utilities_8c_html_a2f1ed6f3e07193ac52e343bf4b917bb4"><div class="ttname"><a href="G-2313-07-P1-utilities_8c.html#a2f1ed6f3e07193ac52e343bf4b917bb4">exist_User</a></div><div class="ttdeci">long exist_User(char *nick)</div><div class="ttdoc">Comprueba si existe un usuario dado su nick. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P1-utilities_8c_source.html#l00198">G-2313-07-P1-utilities.c:198</a></div></div>
+<div class="ttc" id="G-2313-07-P1-utilities_8c_html_a4dc7811f99176698941be68cc7ff6200"><div class="ttname"><a href="G-2313-07-P1-utilities_8c.html#a4dc7811f99176698941be68cc7ff6200">exist_descriptor</a></div><div class="ttdeci">long exist_descriptor(int *desc)</div><div class="ttdoc">Comprueba si existe un usuario dado su descriptor. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P1-utilities_8c_source.html#l00252">G-2313-07-P1-utilities.c:252</a></div></div>
+<div class="ttc" id="G-2313-07-P1-utilities_8c_html_ad4b63b1ef4b2f72d69a8fd08144a2211"><div class="ttname"><a href="G-2313-07-P1-utilities_8c.html#ad4b63b1ef4b2f72d69a8fd08144a2211">isClosed</a></div><div class="ttdeci">long isClosed(int desc)</div><div class="ttdoc">Comprueba si un cliente se ha ido del servidor sin hacer quit. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P1-utilities_8c_source.html#l00147">G-2313-07-P1-utilities.c:147</a></div></div>
+<div class="ttc" id="G-2313-07-P1-utilities_8c_html_a79f6ea5350079c571138b0a00af1f5a4"><div class="ttname"><a href="G-2313-07-P1-utilities_8c.html#a79f6ea5350079c571138b0a00af1f5a4">daemonizar</a></div><div class="ttdeci">void daemonizar()</div><div class="ttdoc">Deja el programa ejecutandose en segundo plano. </div><div class="ttdef"><b>Definition:</b> <a href="G-2313-07-P1-utilities_8c_source.html#l00086">G-2313-07-P1-utilities.c:86</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_a62004cb9b2cb3074bac465e20527258.html">G-2313-07-P1</a></li><li class="navelem"><a class="el" href="dir_55dd4dee76facccdbcf263405ec8a109.html">srclib</a></li><li class="navelem"><a class="el" href="G-2313-07-P1-utilities_8c.html">G-2313-07-P1-utilities.c</a></li>
+    <li class="footer">Generado el Lunes, 8 de Mayo de 2017 00:52:25 para Redes de Comunicaciones 2 por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

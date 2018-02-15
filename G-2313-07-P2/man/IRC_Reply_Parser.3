@@ -1,0 +1,53 @@
+.TH "IRC_Reply_Parser" 3 "Lunes, 8 de Mayo de 2017" "Version Versión&nbsp;1.0" "Redes de Comunicaciones 2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IRC_Reply_Parser \- IRC_Reply_Parser 
+Parsea los mensajes recibidos del servidor, y muestra su contenido al usuario a través de la interfaz gráfica
+.PP
+.SS "Synopsis"
+.PP
+.PP
+.nf
+#include "includes/G\-2313\-07\-P2\-ClientParser\&.h"
+
+void IRC_Reply_Parser(char* command, int desc)
+.fi
+.PP
+.PP
+.SS "Descripción"
+.PP
+Recibe una cadena con el mensaje que se ha recibido del servidor, este se parsea para mostrar la información que contiene de manera que el usuario sea capaz de entenderla ademas de interferir en la interfaz por ejemplo en el caso de cambio de nick, que cambia el la parte inferior izquierda el nombre una vez se recibe la confirmacion del servidor\&.
+.PP
+Mensajes tipo error seran mostrados en la parte principal junto a los mensajes del chat\&. De manera que el usuario sea capaz de entender la causa del error, puesto que el mensaje recibido del servidor tal cual sería mas dificil de entender para un usuario medio
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIcommand\fP puntero a char con el comando recibido y que se va a parsear y ejecutar 
+.br
+\fIdesc\fP valor del descriptor del servidor
+.RE
+.PP
+\fBNota:\fP
+.RS 4
+Esta función libera toda la memoria que reserva, por tanto el usuario no debe preocuparse por liberar memoria\&.
+.RE
+.PP
+.PP
+.PP
+.SS "Información"
+.PP
+\fBAutores:\fP
+.RS 4
+Alfonso Bonilla Trueba (alfonso.bonilla@estudiante.uam.es) 
+.PP
+Mónica de la Iglesia Martínez (monica.delaiglesia@estudiante.uam.es) 
+.RE
+.PP
+\fBCopyright:\fP
+.RS 4
+Pareja 7 - Grupo 2313
+.RE
+.PP
+.PP
+ 

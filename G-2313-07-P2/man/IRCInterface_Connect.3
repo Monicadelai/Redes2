@@ -1,0 +1,67 @@
+.TH "IRCInterface_Connect" 3 "Lunes, 8 de Mayo de 2017" "Version Versión&nbsp;1.0" "Redes de Comunicaciones 2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IRCInterface_Connect \- IRCInterface_Connect 
+Llamada por los distintos botones de conexión\&.
+.PP
+.SS "Synopsis"
+.PP
+.PP
+.nf
+#include <redes2/ircxchat\&.h>
+
+   long IRCInterface_Connect (char *nick, char * user, char * realname, char * password, char * server, int port, boolean ssl)
+.fi
+.PP
+.PP
+.SS "Descripción"
+.PP
+Llamada por los distintos botones de conexión\&. Si implementará la comunicación completa, incluido el registro del usuario en el servidor\&.
+.PP
+En cualquier caso sólo se puede realizar si el servidor acepta la orden\&. Las strings recibidas no deben ser manipuladas por el programador, sólo leída\&.
+.PP
+\fBParámetros:\fP
+.RS 4
+\fInick\fP nick con el que se va a realizar la conexíón\&. 
+.br
+\fIuser\fP usuario con el que se va a realizar la conexión\&. 
+.br
+\fIrealname\fP nombre real con el que se va a realizar la conexión\&. 
+.br
+\fIpassword\fP password del usuario si es necesaria, puede valer NULL\&. 
+.br
+\fIserver\fP nombre o ip del servidor con el que se va a realizar la conexión\&. 
+.br
+\fIport\fP puerto del servidor con el que se va a realizar la conexión\&. 
+.br
+\fIssl\fP puede ser TRUE si la conexión tiene que ser segura y FALSE si no es así\&.
+.RE
+.PP
+\fBValores devueltos:\fP
+.RS 4
+\fIIRC_OK\fP si todo ha sido correcto (debe devolverlo)\&. 
+.br
+\fIIRCERR_NOSSL\fP si el valor de SSL es TRUE y no se puede activar la conexión SSL pero sí una conexión no protegida (debe devolverlo)\&. 
+.br
+\fIIRCERR_NOCONNECT\fP en caso de que no se pueda realizar la comunicación (debe devolverlo)\&.
+.RE
+.PP
+.PP
+.PP
+.SS "Información"
+.PP
+\fBAutores:\fP
+.RS 4
+Alfonso Bonilla Trueba (alfonso.bonilla@estudiante.uam.es) 
+.PP
+Mónica de la Iglesia Martínez (monica.delaiglesia@estudiante.uam.es) 
+.RE
+.PP
+\fBCopyright:\fP
+.RS 4
+Pareja 7 - Grupo 2313
+.RE
+.PP
+.PP
+ 

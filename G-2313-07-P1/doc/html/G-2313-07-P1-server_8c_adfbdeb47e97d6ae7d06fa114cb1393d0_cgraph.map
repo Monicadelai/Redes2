@@ -1,0 +1,6 @@
+<map id="IRC_New_Client" name="IRC_New_Client">
+<area shape="rect" id="node2" href="$G-2313-07-P1-server_8c.html#a509545b46e35abc713c4278698b963e8" title="Parseador de comandos IRC y ejecuta estos. " alt="" coords="175,31,311,57"/>
+<area shape="rect" id="node5" href="$G-2313-07-P1-utilities_8h.html#ad4b63b1ef4b2f72d69a8fd08144a2211" title="Comprueba si un cliente se ha ido del servidor sin hacer quit. " alt="" coords="206,81,279,108"/>
+<area shape="rect" id="node3" href="$G-2313-07-P1-utilities_8h.html#a2f1ed6f3e07193ac52e343bf4b917bb4" title="Comprueba si existe un usuario dado su nick. " alt="" coords="373,5,459,32"/>
+<area shape="rect" id="node4" href="$G-2313-07-P1-utilities_8h.html#a4dc7811f99176698941be68cc7ff6200" title="Comprueba si existe un usuario dado su descriptor. " alt="" coords="359,56,473,83"/>
+</map>

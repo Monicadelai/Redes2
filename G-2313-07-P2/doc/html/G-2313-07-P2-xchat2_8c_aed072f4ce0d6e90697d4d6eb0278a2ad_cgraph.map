@@ -1,0 +1,6 @@
+<map id="IRCInterface_Connect" name="IRCInterface_Connect">
+<area shape="rect" id="node2" href="$G-2313-07-P2-ClientFunctions_8h.html#a3d9042e338c4d5cb1d058b64db227f46" title="Envia un mensaje de PING al servidor cada 30 segundos. " alt="" coords="218,5,338,32"/>
+<area shape="rect" id="node3" href="$G-2313-07-P2-ClientFunctions_8h.html#ad801433c79f579216f3031417403583b" title="Recibe los mensajes del servidor y llama a el parseador de respuestas para mostrar la información en ..." alt="" coords="207,56,349,83"/>
+<area shape="rect" id="node4" href="$G-2313-07-P2-ClientParser_8h.html#ab5e4420e039ab253155647bb3bc06805" title="Parseador de los comandos recibidos del servidor para mostrar la información en el Cliente..." alt="" coords="397,56,529,83"/>
+<area shape="rect" id="node5" href="$G-2313-07-P2-ClientFunctions_8h.html#a93f5a0e561fa9f97a1a59568260768d5" title="Accepta el recibimiento de información. " alt="" coords="577,56,700,83"/>
+</map>

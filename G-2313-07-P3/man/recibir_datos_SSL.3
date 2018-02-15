@@ -1,0 +1,55 @@
+.TH "recibir_datos_SSL" 3 "Lunes, 8 de Mayo de 2017" "Version Versión&nbsp;1.2" "Redes de Comunicaciones 2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+recibir_datos_SSL \- recibir_datos_SSL 
+Recibe cualquier tipo de datos por un canal seguro
+.PP
+.SS "Synopsis"
+.PP
+.PP
+.nf
+#include "includes/G\-2313\-07\-P3\-ConnectionSSL\&.h"
+
+long recibir_datos_SSL(SSL *ssl, void* buf, int longitud)
+.fi
+.PP
+.PP
+.SS "Descripción"
+.PP
+Esta función es quivalente a la función de lectura de mensajes que se realizó en la práctica 1, pero esta es utilizada para enviar datos a través del canal seguro\&. Esta función es genérica y puede ser utilizada independientemente de los datos que se vayan a recibir\&.
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIssl\fP Conexión SSL sobre la que se van a recibir datos\&. 
+.br
+\fIdata\fP Puntero a la variable donde se quieren guardar los datos recibidos\&. 
+.br
+\fIlongitud\fP Tamaño máximo que se quiere recibir\&.
+.RE
+.PP
+\fBValores devueltos:\fP
+.RS 4
+\fITRUE\fP Si los datos se han recibido correctamente 
+.br
+\fIFALSE\fP En caso de que ocurra algún fallo en la recepción de datos
+.RE
+.PP
+.PP
+.PP
+.SS "Información"
+.PP
+\fBAutores:\fP
+.RS 4
+Alfonso Bonilla Trueba (alfonso.bonilla@estudiante.uam.es) 
+.PP
+Mónica de la Iglesia Martínez (monica.delaiglesia@estudiante.uam.es) 
+.RE
+.PP
+\fBCopyright:\fP
+.RS 4
+Pareja 7 - Grupo 2313
+.RE
+.PP
+.PP
+ 

@@ -1,0 +1,50 @@
+.TH "conectar_canal_seguro_SSL" 3 "Lunes, 8 de Mayo de 2017" "Version Versión&nbsp;1.2" "Redes de Comunicaciones 2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+conectar_canal_seguro_SSL \- conectar_canal_seguro_SSL 
+Se encarga de iniciar el proceso de handshake
+.PP
+.SS "Synopsis"
+.PP
+.PP
+.nf
+#include "includes/G\-2313\-07\-P3\-ConnectionSSL\&.h"
+
+SSL* conectar_canal_seguro_SSL()
+.fi
+.PP
+.PP
+.SS "Descripción"
+.PP
+Dado un contexto SSL y un descriptor de socket esta función se encarga de obtener un canal seguro SSL iniciando el proceso de handshake con el otro extremo\&.
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIcontexto\fP Contexto de la conexión SSL 
+.br
+\fIdesc\fP Puntero al descriptor del socket 
+.br
+\fIpuerto\fP Número del puerto que se va a usar en la conexión 
+.br
+\fIhost\fP El host sobre el que se va a realizar la conexión SSL
+.RE
+.PP
+.PP
+.PP
+.SS "Información"
+.PP
+\fBAutores:\fP
+.RS 4
+Alfonso Bonilla Trueba (alfonso.bonilla@estudiante.uam.es) 
+.PP
+Mónica de la Iglesia Martínez (monica.delaiglesia@estudiante.uam.es) 
+.RE
+.PP
+\fBCopyright:\fP
+.RS 4
+Pareja 7 - Grupo 2313
+.RE
+.PP
+.PP
+ 

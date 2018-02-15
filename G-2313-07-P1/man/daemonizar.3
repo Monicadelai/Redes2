@@ -1,0 +1,73 @@
+.TH "daemonizar" 3 "Lunes, 8 de Mayo de 2017" "Version Versión&nbsp;1.1" "Redes de Comunicaciones 2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+daemonizar \- daemonizar 
+Demoniza el programa y lo deja ejecutando en segundo plano
+.PP
+.SS "Synopsis"
+.PP
+.PP
+.nf
+#include "includes/G\-2313\-07\-P1\-server\&.h"
+
+void daemonizar()
+.fi
+.PP
+.PP
+.SS "Descripción"
+.PP
+Demoniza el programa:
+.br
+.PD 0
+.IP "\(bu" 2
+Crea un proceso hijo, y hace terminar al padre\&.
+.br
+  
+.IP "\(bu" 2
+Crea una nueva sesión de tal forma que el proceso pase a ser el lider de la sesion\&.
+.br
+  
+.IP "\(bu" 2
+Cambia la mascara de modo de ficheros para que sean accesibles a cualquiera\&.
+.br
+  
+.IP "\(bu" 2
+Establece el directorio raiz / como directorio de trabajo
+.br
+  
+.IP "\(bu" 2
+Cierra todos los descriptores de fichero que pueda haber abiertos\&.
+.br
+  
+.IP "\(bu" 2
+Abre el log del sistema para su posterior uso\&.
+.br
+  
+.PP
+.PP
+Se llama nada mas empezar el programa y todo se ejecutara en segundo plano en un proceso hijo que ha tomado el control\&.
+.PP
+\fBAtención:\fP
+.RS 4
+Esta función deja al programa ejecuntado en segundo plano, por lo que se hay un error habrá que consultar el log del sistema para saber donde ha fallado ya que prints no funcionaran\&.
+.RE
+.PP
+.PP
+.PP
+.SS "Información"
+.PP
+\fBAutores:\fP
+.RS 4
+Alfonso Bonilla Trueba (alfonso.bonilla@estudiante.uam.es) 
+.PP
+Mónica de la Iglesia Martínez (monica.delaiglesia@estudiante.uam.es) 
+.RE
+.PP
+\fBCopyright:\fP
+.RS 4
+Pareja 7 - Grupo 2313
+.RE
+.PP
+.PP
+ 

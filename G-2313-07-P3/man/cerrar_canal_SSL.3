@@ -1,0 +1,48 @@
+.TH "cerrar_canal_SSL" 3 "Lunes, 8 de Mayo de 2017" "Version Versión&nbsp;1.2" "Redes de Comunicaciones 2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+cerrar_canal_SSL \- cerrar_canal_SSL 
+Libera y cierra canal seguro
+.PP
+.SS "Synopsis"
+.PP
+.PP
+.nf
+#include "includes/G\-2313\-07\-P3\-ConnectionSSL\&.h"
+
+void cerrar_canal_SSL(SSL *ssl, SSL_CTX *contexto, int socket)
+.fi
+.PP
+.PP
+.SS "Descripción"
+.PP
+Esta función liberar todos los recursos y cerrará el canal de comunicación seguro creado previamente\&.
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIssl\fP Conexión SSL que se va a cerrar\&. 
+.br
+\fIcontexto\fP Puntero al contexto de la conexión que se va a cerrar\&. 
+.br
+\fIsocket\fP Descriptor del socket de la conexión a cerrar\&.
+.RE
+.PP
+.PP
+.PP
+.SS "Información"
+.PP
+\fBAutores:\fP
+.RS 4
+Alfonso Bonilla Trueba (alfonso.bonilla@estudiante.uam.es) 
+.PP
+Mónica de la Iglesia Martínez (monica.delaiglesia@estudiante.uam.es) 
+.RE
+.PP
+\fBCopyright:\fP
+.RS 4
+Pareja 7 - Grupo 2313
+.RE
+.PP
+.PP
+ 

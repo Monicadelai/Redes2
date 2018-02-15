@@ -1,0 +1,4 @@
+<map id="IRCInterface_NewCommandText" name="IRCInterface_NewCommandText">
+<area shape="rect" id="node2" href="$G-2313-07-P2-ClientParser_8h.html#a9cc7741f3699b224baa12600b44fbd58" title="Genera los mensajes bien formados para que el servidor sea capaz de interpretarlos según el RFC..." alt="" coords="271,5,403,32"/>
+<area shape="rect" id="node3" href="$G-2313-07-P2-xchat2_8c.html#a8bf0424ef7f845be79a056e9aed56fe2" title="IRCInterface_DisconnectServer" alt="" coords="451,5,659,32"/>
+</map>

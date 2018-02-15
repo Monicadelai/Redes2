@@ -1,0 +1,51 @@
+.TH "exist_descriptor" 3 "Lunes, 8 de Mayo de 2017" "Version Versión&nbsp;1.1" "Redes de Comunicaciones 2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+exist_descriptor \- exist_descriptor 
+Comprueba si existe un descriptor de usuario
+.PP
+.SS "Synopsis"
+.PP
+.PP
+.nf
+#include "includes/G\-2313\-07\-P1\-server\&.h"
+
+long exist_descriptor(int* desc)
+.fi
+.PP
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIdesc\fP Puntero a entero del descriptor que se quiere comporbar si pertenece a algun usuario registrado en el servidor\&.
+.RE
+.PP
+\fBValores devueltos:\fP
+.RS 4
+\fITRUE\fP en caso de encontrar un usuario con el descriptor asociado 
+.br
+\fIFALSE\fP en caso de no encontrar un usuario con el descriptor dado
+.RE
+.PP
+.SS "Descripción"
+.PP
+Dado un descriptor busca si en el servidor hay algun usuario que tenga asociado este descriptor\&.
+.PP
+.PP
+.PP
+.SS "Información"
+.PP
+\fBAutores:\fP
+.RS 4
+Alfonso Bonilla Trueba (alfonso.bonilla@estudiante.uam.es) 
+.PP
+Mónica de la Iglesia Martínez (monica.delaiglesia@estudiante.uam.es) 
+.RE
+.PP
+\fBCopyright:\fP
+.RS 4
+Pareja 7 - Grupo 2313
+.RE
+.PP
+.PP
+ 

@@ -1,0 +1,46 @@
+.TH "IRC_Initiate_Server" 3 "Lunes, 8 de Mayo de 2017" "Version Versión&nbsp;1.1" "Redes de Comunicaciones 2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IRC_Initiate_Server \- IRC_Initiate_Server 
+Inicializa el servidor abriendo el socket
+.PP
+.SS "Synopsis"
+.PP
+.PP
+.nf
+#include "includes/G\-2313\-07\-P1\-server\&.h"
+
+int IRC_Initiate_Server()
+.fi
+.PP
+.PP
+.SS "Descripción"
+.PP
+Abre el socket y comprobando que no haya error, a continuacion hace bind y lo prepara para escuchar\&. Escucha un máximo de conexiones\&. En caso de que alguno de estos pasos falle se reflejará en el log del sistema\&.
+.PP
+Además establece el manejador para la señal SIGINT
+.PP
+\fBValores devueltos:\fP
+.RS 4
+\fIint\fP El descriptor del socket que acaba de abrir y preparar para escuchar concexiones\&.
+.RE
+.PP
+.PP
+.PP
+.SS "Información"
+.PP
+\fBAutores:\fP
+.RS 4
+Alfonso Bonilla Trueba (alfonso.bonilla@estudiante.uam.es) 
+.PP
+Mónica de la Iglesia Martínez (monica.delaiglesia@estudiante.uam.es) 
+.RE
+.PP
+\fBCopyright:\fP
+.RS 4
+Pareja 7 - Grupo 2313
+.RE
+.PP
+.PP
+ 

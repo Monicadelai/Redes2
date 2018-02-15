@@ -1,0 +1,44 @@
+.TH "IRC_Ping_Pong" 3 "Lunes, 8 de Mayo de 2017" "Version Versión&nbsp;1.1" "Redes de Comunicaciones 2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IRC_Ping_Pong \- IRC_Ping_Pong 
+Se encarga de realizar el protocolo PING PONG
+.PP
+.SS "Synopsis"
+.PP
+.PP
+.nf
+#include "includes/G\-2313\-07\-P1\-server\&.h"
+
+void IRC_Ping_Pong(int sig)
+.fi
+.PP
+.PP
+.SS "Descripción"
+.PP
+Esta funcion realiza el protocolo PING PONG, es decir, envía a cada usuario del servidor un PING cada 30 segundos, y espera recibir de este un PONG, si no lo recibe es que el usuario ya no esta conectado y por tanto lo elimina del servidor\&. De esta manera se optimiza el uso del servidor y de nicks dejando solo conectados a aquellos que estan interactuando en el servidor\&.
+.PP
+\fBParámetros:\fP
+.RS 4
+\fIsig\fP Valor de la señal a la que va a estar asociada esta función\&.
+.RE
+.PP
+.PP
+.PP
+.SS "Información"
+.PP
+\fBAutores:\fP
+.RS 4
+Alfonso Bonilla Trueba (alfonso.bonilla@estudiante.uam.es) 
+.PP
+Mónica de la Iglesia Martínez (monica.delaiglesia@estudiante.uam.es) 
+.RE
+.PP
+\fBCopyright:\fP
+.RS 4
+Pareja 7 - Grupo 2313
+.RE
+.PP
+.PP
+ 
